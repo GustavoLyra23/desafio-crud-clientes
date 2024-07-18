@@ -10,8 +10,8 @@ public class ClientDto {
 
     private Long id;
 
-    @NotBlank(message = "nome cant be empty")
-    private String nome;
+    @NotBlank(message = "name cant be empty")
+    private String name;
 
     private String cpf;
     private Double income;
@@ -26,7 +26,7 @@ public class ClientDto {
 
     public ClientDto(Client client) {
         id = client.getId();
-        nome = client.getNome();
+        name = client.getName();
         cpf = client.getCpf();
         income = client.getIncome();
         birthDate = client.getBirthDate();
@@ -38,8 +38,8 @@ public class ClientDto {
     }
 
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
 

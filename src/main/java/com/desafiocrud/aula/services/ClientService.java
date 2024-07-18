@@ -66,7 +66,7 @@ public class ClientService {
 
     private void dtoToEntity(ClientDto clientDto, Client client) {
         client.setBirthDate(clientDto.getBirthDate());
-        client.setNome(clientDto.getNome());
+        client.setName(clientDto.getName());
         client.setCpf(clientDto.getCpf());
         client.setChildren(clientDto.getChildren());
         client.setIncome(clientDto.getIncome());
